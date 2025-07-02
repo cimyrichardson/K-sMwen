@@ -78,7 +78,3 @@ Les contributions sont les bienvenues ! Vous pouvez ouvrir des issues pour signa
 ## Licence
 
 Ce projet est sous licence MIT.
-
----
-
-Pour toute question ou besoin de collaboration, contactez-moi via \[votre email ou LinkedIn].
