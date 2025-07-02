@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KèsMwen - Gère ton argent simplement</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-wallet me-2"></i>KèsMwen</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i>Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features"><i class="fas fa-chart-bar me-1"></i>Fonctionnalités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#badges"><i class="fas fa-trophy me-1"></i>Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq"><i class="fas fa-question-circle me-1"></i>FAQ</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <div class="language-selector">
+                        <i class="fas fa-globe me-1"></i>
+                        <select class="form-select form-select-sm border-0 bg-transparent" id="languageSelect">
+                            <option value="fr">FR</option>
+                            <option value="ht">Kreyòl</option>
+                        </select>
+                    </div>
+
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <!-- <div class="d-flex gap-2">
+                        <a href="#" class="btn-outline-custom d-none d-sm-inline">Se connecter</a>
+                        <a href="#" class="btn-primary-custom">S'inscrire</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Gère ton argent, deviens maître de ton budget</h1>
+                    <p class="hero-subtitle">KèsMwen t'aide à suivre tes revenus et dépenses simplement. Visualise tes
+                        habitudes financières et prends le contrôle de ton avenir.</p>
+                    <a href="#" class="btn-primary-custom">
+                        <i class="fas fa-rocket me-2"></i>Commencer maintenant
+                    </a>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="w-100">
+                                <h6 class="text-center mb-3" style="color: var(--primary-color);">Mon Budget</h6>
+                                <div class="chart-placeholder">
+                                    <i class="fas fa-chart-pie me-2"></i>
+                                    Graphiques
+                                </div>
+                                <div class="stats-grid">
+                                    <div class="stat-item">
+                                        <small class="text-muted">Revenus</small>
+                                        <div class="fw-bold text-success">50,000 HTG</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <small class="text-muted">Dépenses</small>
+                                        <div class="fw-bold text-danger">32,000 HTG</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <small class="text-muted">Épargne</small>
+                                        <div class="fw-bold text-primary">18,000 HTG</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <small class="text-muted">Badges</small>
+                                        <div class="fw-bold text-warning">🏆 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-blue">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="mb-3">Suivi simplifié</h4>
+                        <p class="text-muted">Enregistre tes revenus et dépenses en quelques clics. Interface intuitive
+                            conçue pour une utilisation quotidienne.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-green">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4 class="mb-3">Visualisation claire</h4>
+                        <p class="text-muted">Comprends tes habitudes de dépenses grâce à des graphiques colorés et des
+                            catégories personnalisées.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-orange">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4 class="mb-3">Système de badges</h4>
+                        <p class="text-muted">Gagne des récompenses en atteignant tes objectifs d'épargne et deviens un
+                            expert en gestion budgétaire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Badges Section -->
+    <section class="badges-section py-5" id="badges">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">Gagne des badges et progresse</h2>
+                    <p class="section-subtitle">Transforme tes bonnes habitudes financières en récompenses motivantes
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="badge-card">
+                        <div class="badge-icon">🥉</div>
+                        <h5>Premier pas</h5>
+                        <p class="text-muted">Enregistre ta première transaction</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="badge-card">
+                        <div class="badge-icon">💰</div>
+                        <h5>Épargnant</h5>
+                        <p class="text-muted">Économise 10,000 HTG en un mois</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="badge-card">
+                        <div class="badge-icon">🏆</div>
+                        <h5>Maître du budget</h5>
+                        <p class="text-muted">Respecte ton budget pendant 3 mois</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5" id="faq">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">Questions fréquentes</h2>
+                    <p class="section-subtitle">Tout ce que tu dois savoir sur KèsMwen</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    KèsMwen est-il gratuit ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, KèsMwen est entièrement gratuit. Tu peux suivre tes finances sans aucun coût.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Mes données sont-elles sécurisées ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolument. Tes données financières sont cryptées et stockées de manière sécurisée.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Puis-je utiliser KèsMwen hors ligne ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tu peux consulter tes données hors ligne, mais tu auras besoin d'une connexion pour
+                                    synchroniser tes nouvelles transactions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="cta-title">Prêt à prendre le contrôle de tes finances ?</h2>
+                    <p class="cta-subtitle">Rejoins KèsMwen aujourd'hui et transforme ta relation avec l'argent. C'est
+                        gratuit et ça prend moins de 2 minutes.</p>
+                    <a href="#" class="btn-light-custom">
+                        <i class="fas fa-user-plus me-2"></i>Créer mon compte
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-wallet me-2" style="color: var(--primary-color);"></i>
+                        <span class="h5 mb-0" style="color: var(--text-primary);">KèsMwen</span>
+                    </div>
+                    <p>Simplifie ta gestion budgétaire et construis ton avenir financier.</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="color: var(--text-primary);">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Accueil</a></li>
+                        <li class="mb-2"><a href="#features">Fonctionnalités</a></li>
+                        <li class="mb-2"><a href="#badges">Badges</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="color: var(--text-primary);">Légal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="confidentialite.html">Confidentialité</a></li>
+                        <li class="mb-2"><a href="conditions.html">Conditions</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-3" style="color: var(--text-primary);">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> contact@kesmwen.com</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +509 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Port-au-Prince, Haïti</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 KèsMwen. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#"><i class="fab fa-google-play"></i></a>
+                        <a href="#"><i class="fab fa-apple"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

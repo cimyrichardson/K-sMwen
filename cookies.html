@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique relative aux Cookies | KèsMwen</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        :root {
+            --primary-color: #f59e0b;
+            --text-primary: #1e293b;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-primary);
+            padding-top: 80px;
+            background-color: #f8fafc;
+        }
+        
+        .cookies-header {
+            background: linear-gradient(135deg, var(--primary-color), #ea580c);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .cookies-content {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .cookie-type {
+            border-left: 3px solid var(--primary-color);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .cookies-header {
+                padding: 3rem 0;
+            }
+            
+            .cookies-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-wallet me-2"></i>KèsMwen</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fas fa-home me-1"></i>Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features"><i class="fas fa-chart-bar me-1"></i>Fonctionnalités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#badges"><i class="fas fa-trophy me-1"></i>Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq"><i class="fas fa-question-circle me-1"></i>FAQ</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <div class="language-selector">
+                        <i class="fas fa-globe me-1"></i>
+                        <select class="form-select form-select-sm border-0 bg-transparent" id="languageSelect">
+                            <option value="fr">FR</option>
+                            <option value="ht">Kreyòl</option>
+                        </select>
+                    </div>
+
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <!-- <div class="d-flex gap-2">
+                        <a href="#" class="btn-outline-custom d-none d-sm-inline">Se connecter</a>
+                        <a href="#" class="btn-primary-custom">S'inscrire</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- En-tête -->
+    <header class="cookies-header">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Politique relative aux Cookies</h1>
+                    <p class="lead mb-0">Dernière mise à jour : 15 juin 2025</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="cookies-content">
+                    <p class="lead">Cette politique explique comment KèsMwen utilise les cookies et technologies similaires lorsque vous utilisez notre application.</p>
+                    
+                    <h2 class="h3 fw-bold mt-5">1. Qu'est-ce qu'un cookie ?</h2>
+                    <div class="row align-items-center mt-4">
+                        <div class="col-md-6">
+                            <p>Un cookie est un petit fichier texte stocké sur votre appareil lorsque vous visitez un site web ou utilisez une application. Les cookies nous aident à :</p>
+                            <ul>
+                                <li class="mb-2">Reconnaître votre appareil</li>
+                                <li class="mb-2">Mémoriser vos préférences</li>
+                                <li>Améliorer votre expérience</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="https://cdn.pixabay.com/photo/2019/07/14/16/27/cookie-4337521_1280.png" alt="Illustration de cookies" class="img-fluid" style="max-height: 200px;">
+                        </div>
+                    </div>
+
+                    <h2 class="h3 fw-bold mt-5">2. Types de cookies utilisés</h2>
+                    <div class="row mt-4 g-4">
+                        <div class="col-md-4">
+                            <div class="cookie-type">
+                                <h3 class="h5 fw-bold"><i class="fas fa-check-circle me-2"></i>Essentiels</h3>
+                                <p class="mb-0">Nécessaires au fonctionnement de base. Sans eux, le service ne peut pas fonctionner correctement.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cookie-type">
+                                <h3 class="h5 fw-bold"><i class="fas fa-cog me-2"></i>Préférences</h3>
+                                <p class="mb-0">Mémorisent vos choix (langue, thème, paramètres).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cookie-type">
+                                <h3 class="h5 fw-bold"><i class="fas fa-chart-bar me-2"></i>Analytiques</h3>
+                                <p class="mb-0">Nous aident à comprendre comment vous utilisez l'application.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="h3 fw-bold mt-5">3. Gestion des cookies</h2>
+                    <div class="card mt-4">
+                        <div class="card-header bg-light">
+                            <h3 class="h5 mb-0"><i class="fas fa-sliders-h me-2"></i>Comment contrôler les cookies</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="h6 fw-bold"><i class="fab fa-chrome me-2"></i>Chrome</h4>
+                                    <ol>
+                                        <li>Ouvrez les paramètres</li>
+                                        <li>Cliquez sur "Confidentialité et sécurité"</li>
+                                        <li>Sélectionnez "Paramètres des sites"</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="h6 fw-bold"><i class="fab fa-safari me-2"></i>Safari</h4>
+                                    <ol>
+                                        <li>Ouvrez les préférences</li>
+                                        <li>Cliquez sur "Confidentialité"</li>
+                                        <li>Gérez les paramètres des cookies</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="alert alert-info mt-3 mb-0">
+                                <i class="fas fa-info-circle me-2"></i>
+                                La désactivation des cookies essentiels peut affecter le fonctionnement de KèsMwen.
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="h3 fw-bold mt-5">4. Autres technologies</h2>
+                    <p>Nous utilisons également :</p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-database me-3 mt-1 text-warning"></i>
+                                <div>
+                                    <h4 class="h6 fw-bold">Stockage local</h4>
+                                    <p class="mb-0">Pour sauvegarder vos préférences et données de session</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-pixel-alt me-3 mt-1 text-warning"></i>
+                                <div>
+                                    <h4 class="h6 fw-bold">Pixels de suivi</h4>
+                                    <p class="mb-0">Pour mesurer l'efficacité de nos campagnes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-5 border-warning">
+                        <div class="card-body">
+                            <h3 class="h5 fw-bold text-warning"><i class="fas fa-cookie-bite me-2"></i>Consentement</h3>
+                            <p class="mb-0">En continuant à utiliser KèsMwen, vous consentez à notre utilisation des cookies conformément à cette politique. Vous pouvez modifier vos préférences à tout moment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-wallet me-2" style="color: var(--primary-color);"></i>
+                        <span class="h5 mb-0" style="color: var(--text-primary);">KèsMwen</span>
+                    </div>
+                    <p>Simplifie ta gestion budgétaire et construis ton avenir financier.</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="color: var(--text-primary);">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Accueil</a></li>
+                        <li class="mb-2"><a href="#features">Fonctionnalités</a></li>
+                        <li class="mb-2"><a href="#badges">Badges</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="color: var(--text-primary);">Légal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="confidentialite.html">Confidentialité</a></li>
+                        <li class="mb-2"><a href="conditions.html">Conditions</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-3" style="color: var(--text-primary);">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> contact@kesmwen.com</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +509 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Port-au-Prince, Haïti</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 KèsMwen. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#"><i class="fab fa-google-play"></i></a>
+                        <a href="#"><i class="fab fa-apple"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
