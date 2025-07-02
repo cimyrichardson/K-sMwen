@@ -43,7 +43,7 @@
 1. **Cloner le dépôt :**
 
    ```bash
-   git clone https://github.com/votre-utilisateur/kesmwen.git
+   git clone https://github.com/cimyrichardson/K-sMwen.git
    ```
 
 2. **Configurer la base de données :**
